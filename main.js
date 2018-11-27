@@ -149,25 +149,9 @@ define(function (require, exports, module) {
 })(jQuery);
 
     AppInit.appReady(function () {
-        // Parse JSON files
-        tags = JSON.parse(HTMLTags);
-        attributes = JSON.parse(HTMLAttributes);
-        properties = JSON.parse(CSSProperties);
-        
-        // Register code hint providers
-        var tagHints = new TagHints();
-        var attrHints = new AttrHints();
-        CodeHintManager.registerHintProvider(tagHints, ["html"], 9);
-        CodeHintManager.registerHintProvider(attrHints, ["html"], 9);
-    
-        // For unit testing
-        exports.tagHintProvider = tagHints;
-        exports.attrHintProvider = attrHints;  
         
         // First, register a command - a UI-less object associating an id to a handler
         CommandManager.register('Update', 'builder.build', parseTemplate);
-
-		
         
        // var PARSE_AND_REPLACE = "Spike.UpdateTemplate";   // package-style naming to avoid collisions
         CommandManager.register("Update Email Layout",'Spike.UpdateTemplate', parseTemplate);
