@@ -1,0 +1,21 @@
+{
+    "title": "Spike Toolkit",
+    "name": "lierop.brackets-spiketoolkit",
+    "description": "Tools to please Wilcosaurus",
+    "version": "0.0.1",
+    "keywords": ["template", "toolkit", "Spike","Measuremail","email"],
+    "author": "m.lierop <m.lierop@measuremail.com>",
+    "homepage": "https://github.com/MaartenWL/spike-template-toolkit",
+    "files": [
+        "main.js",
+        "HtmlAttributes.json",
+        "HtmlTags.json",
+        "CSSProperties.json",
+        "brackets-cclayoutbuilder-panel.html",
+        "README.md"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/MaartenWL/Email-HTML_Codehints.git"
+    }
+}
